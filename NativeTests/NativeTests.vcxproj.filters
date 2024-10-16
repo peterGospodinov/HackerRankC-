@@ -27,6 +27,9 @@
     <ClCompile Include="DiagonalDifferenceTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IntArrayTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">

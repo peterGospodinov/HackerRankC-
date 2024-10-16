@@ -30,6 +30,15 @@
     <ClInclude Include="DiagonalDifference.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CountingSort1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -45,6 +54,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DiagonalDifference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
