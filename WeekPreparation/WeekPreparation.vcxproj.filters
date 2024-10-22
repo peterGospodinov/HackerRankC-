@@ -56,9 +56,6 @@
     <ClCompile Include="DiagonalDifference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="IntArray.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Exceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

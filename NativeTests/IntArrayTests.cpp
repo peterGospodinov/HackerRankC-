@@ -12,15 +12,15 @@ namespace IntArrayTests
 	public:
 		TEST_METHOD(TestEmptyArray)
 		{
-			IntArray intArray{};
+			IntArray<int> intArray{};
 			intArray.Size();
 			Assert::IsTrue(intArray.IsEmpty());
 		}
 
 		TEST_METHOD(Test10elementsArray)
 		{
-			IntArray b{ 10 };
-			auto size = b.Size();
+			IntArray<int> b{ 10 };
+			int size = b.Size();
 			Assert::AreEqual(10, size);
 			Assert::IsFalse(b.IsEmpty());
 		}
@@ -29,14 +29,15 @@ namespace IntArrayTests
 		{
 
 			try {
-				IntArray a{ 3 };
+				IntArray<int> a{3};
 				a[0] = 10;
 				a[1] = 20;
 				a[2] = 30;
 
-				IntArray b = a;
+				IntArray<int> b{3};
+                b.MoveArray(std::move(a));
 
- 				for (int i = 0; i < a.Size(); i++) {
+					for (int i = 0; i < a.Size(); i++) {
 					Logger::WriteMessage(("a= " + std::to_string(a[i])).c_str());
 				}
 
@@ -55,10 +56,9 @@ namespace IntArrayTests
 					Logger::WriteMessage(("b= " + std::to_string(b[i])).c_str());
 				}
                 
-				a[11] = 12;
 			}
 			catch (const IndexOutOfBoundsException e) {
-				Logger::WriteMessage("Error invalid array index: ");
+				Logger::WriteMessage("Error invalid array index:");
 			}
 		}
 	};

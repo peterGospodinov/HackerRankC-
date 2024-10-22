@@ -153,7 +153,6 @@
     <ClCompile Include="DiagonalDifference.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Exceptions.cpp" />
-    <ClCompile Include="IntArray.cpp" />
     <ClCompile Include="Lonelyinteger.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
